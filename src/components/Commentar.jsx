@@ -244,7 +244,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
   );
 });
 
-const Komentar = () => {
+const CommentSection = () => {
   const [comments, setComments] = useState([]);
   const [pinnedComment, setPinnedComment] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -285,22 +285,22 @@ const Komentar = () => {
   }, []);
 
   // Fetch regular comments (excluding pinned) and set up real-time subscription
+  // Fetch comments function for reuse
+  const fetchComments = useCallback(async () => {
+    const { data, error } = await supabase
+      .from("portfolio_comments")
+      .select("*", { head: false })
+      .eq("is_pinned", false)
+      .order("created_at", { ascending: false });
+
+    if (error) {
+      console.error("Error fetching comments:", error);
+      return;
+    }
+    setComments(data || []);
+  }, []);
+
   useEffect(() => {
-    const fetchComments = async () => {
-      const { data, error } = await supabase
-        .from("portfolio_comments")
-        .select("*", { head: false })
-        .eq("is_pinned", false)
-        .order("created_at", { ascending: false });
-
-      if (error) {
-        console.error("Error fetching comments:", error);
-        return;
-      }
-
-      setComments(data || []);
-    };
-
     fetchComments();
 
     // Set up real-time subscription
@@ -323,7 +323,7 @@ const Komentar = () => {
     return () => {
       subscription.unsubscribe();
     };
-  }, []);
+  }, [fetchComments]);
 
   const uploadImage = useCallback(async (imageFile) => {
     if (!imageFile) return null;
@@ -370,6 +370,8 @@ const Komentar = () => {
         if (error) {
           throw error;
         }
+        // Instantly refetch comments after successful submit
+        await fetchComments();
       } catch (error) {
         setError("Failed to post comment. Please try again.");
         console.error("Error adding comment: ", error);
@@ -377,7 +379,7 @@ const Komentar = () => {
         setIsSubmitting(false);
       }
     },
-    [uploadImage]
+    [uploadImage, fetchComments]
   );
 
   const formatDate = useCallback((timestamp) => {
@@ -500,4 +502,4 @@ const Komentar = () => {
   );
 };
 
-export default Komentar;
+export default CommentSection;
