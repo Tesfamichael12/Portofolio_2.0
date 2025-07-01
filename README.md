@@ -6,7 +6,7 @@ I'm **Tesfamichael Tafere**, a passionate Full-Stack Developer (MERN Specialist)
 
 ## 🚀 Live Demo
 
-🌐 **Live Site:** [https://tesfamichaeltafere.netlify.app/](https://tesfamichaeltafere.netlify.app/)
+🌐 **Live Site:** [https://mikey-hope-dev.vercel.app/](https://mikey-hope-dev.vercel.app/)
 
 ## 🛠️ Tech Stack
 
@@ -39,8 +39,8 @@ Follow these steps to run the project locally:
 ### 1\. Clone the Repository
 
 ```bash
-git clone https://github.com/Tesfamichael12/Portofolio_2.0.git
-cd Portofolio_2.0
+git clone https://github.com/Tesfamichael12/Portfolio_2.0.git
+cd Portfolio_2.0
 ```
 
 ### 2\. Install Dependencies
@@ -169,8 +169,8 @@ INSERT INTO public.projects ("Title", "Description", "Img", "Link", "Github", "F
 VALUES (
     'Goodreads Clone',
     'A full-stack web app for book lovers to review, rate, and track books. Built with MERN stack, authentication, and real-time updates.',
-'https://tesfamichaeltafere.netlify.app/assets/goodreads-clone.png',
-'https://goodreads-clone.tesfamichaeltafere.netlify.app',
+'https://mikey-hope-dev.vercel.app/assets/goodreads-clone.png',
+'https://goodreads-clone.mikey-hope-dev.vercel.app',
     'https://github.com/tesfamichael/goodreads-clone',
     '["User authentication", "Book search & review", "Real-time comments", "Responsive UI"]',
     '["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]'
@@ -180,7 +180,7 @@ VALUES (
 -- Insert one example certificate
 
 INSERT INTO public.certificates ("Img")
-VALUES ('https://tesfamichaeltafere.netlify.app/assets/certificate-example.png');
+VALUES ('https://mikey-hope-dev.vercel.app/assets/certificate-example.png');
 
 -- Insert one example comment
 
@@ -252,8 +252,8 @@ If you have any questions or need help with the setup, feel free to reach out\!
 
 ## 📫 Contact Me
 
-- 🌍 Website: [tesfamichaeltafere.netlify.app](https://tesfamichaeltafere.netlify.app/)
-- 💼 LinkedIn: [tesfamichaeltafere](https://www.linkedin.com/in/tesfamichaeltafere/)
+- 🌍 Website: [mikey-hope-dev.vercel.app](https://mikey-hope-dev.vercel.app/)
+- 💼 LinkedIn: [tesfamichael-tafere](https://www.linkedin.com/in/tesfamichael-tafere/)
 - 🐙 GitHub: [Tesfamichael12](https://github.com/Tesfamichael12)
 - 🏆 LeetCode: [hopmic](https://leetcode.com/hopmic/)
 - 📧 Email: tesfamichael132@gmail.com
