@@ -6,7 +6,7 @@ I'm **Tesfamichael Tafere**, a passionate Full-Stack Developer (MERN Specialist)
 
 ## 🚀 Live Demo
 
-🌐 **Live Site:** [https://mikey-hope-dev.vercel.app/](https://mikey-hope-dev.vercel.app/)
+🌐 **Live Site:** [mikeyhope.software/](https://www.mikeyhope.software/)
 
 ## 🛠️ Tech Stack
 
@@ -169,8 +169,8 @@ INSERT INTO public.projects ("Title", "Description", "Img", "Link", "Github", "F
 VALUES (
     'Goodreads Clone',
     'A full-stack web app for book lovers to review, rate, and track books. Built with MERN stack, authentication, and real-time updates.',
-'https://mikey-hope-dev.vercel.app/assets/goodreads-clone.png',
-'https://goodreads-clone.mikey-hope-dev.vercel.app',
+'https://www.mikeyhope.software//assets/goodreads-clone.png',
+'https://goodreads-clone.vercel.app',
     'https://github.com/tesfamichael/goodreads-clone',
     '["User authentication", "Book search & review", "Real-time comments", "Responsive UI"]',
     '["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]'
@@ -180,7 +180,7 @@ VALUES (
 -- Insert one example certificate
 
 INSERT INTO public.certificates ("Img")
-VALUES ('https://mikey-hope-dev.vercel.app/assets/certificate-example.png');
+VALUES ('https://www.mikeyhope.software//assets/certificate-example.png');
 
 -- Insert one example comment
 
@@ -252,7 +252,7 @@ If you have any questions or need help with the setup, feel free to reach out\!
 
 ## 📫 Contact Me
 
-- 🌍 Website: [mikey-hope-dev.vercel.app](https://mikey-hope-dev.vercel.app/)
+- 🌍 Website: [mikeyhope.software/](https://www.mikeyhope.software/)
 - 💼 LinkedIn: [tesfamichael-tafere](https://www.linkedin.com/in/tesfamichael-tafere/)
 - 🐙 GitHub: [Tesfamichael12](https://github.com/Tesfamichael12)
 - 🏆 LeetCode: [hopmic](https://leetcode.com/hopmic/)
